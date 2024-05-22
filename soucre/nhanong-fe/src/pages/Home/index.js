@@ -38,6 +38,7 @@ function Home() {
                     </Carousel>
                 </Col>
             </Row>
+            
         </div>
     );
 }

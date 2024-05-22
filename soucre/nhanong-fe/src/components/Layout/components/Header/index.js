@@ -1,8 +1,9 @@
 import { CameraOutlined, CommentOutlined, ShoppingCartOutlined } from '@ant-design/icons';
-import { Button, Space } from 'antd';
+import { Avatar, Button, Space } from 'antd';
 import Search from 'antd/es/input/Search';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
+import images from '~/assets/images';
 
 const cx = classNames.bind(styles);
 
@@ -15,7 +16,7 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <CameraOutlined /> Photobox
+                <Avatar size={60} src={images.logo} /> Photobox
                 </div>
                 <Search
                     placeholder="Search"
